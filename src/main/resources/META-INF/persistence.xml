@@ -18,9 +18,9 @@
             <!-- URL for DB -->
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/sp" />
             <!-- Username -->
-            <property name="javax.persistence.jdbc.user" value="sp" />
+            <property name="javax.persistence.jdbc.user" value="database" />
             <!-- Password -->
-            <property name="javax.persistence.jdbc.password" value="sp123" />
+            <property name="javax.persistence.jdbc.password" value="password" />
         </properties>
     </persistence-unit>
 </persistence>
