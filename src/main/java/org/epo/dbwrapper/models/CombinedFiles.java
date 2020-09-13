@@ -1,4 +1,4 @@
-package org.epo.dbwrapper.tables;
+package org.epo.dbwrapper.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -6,14 +6,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "COUNTRIES")
-public class Countries {
+@Table(name = "COMBINED_FILES")
+public class CombinedFiles {
     @Id
     @Column(name = "ID", unique = true)
     private String id;
-
-    @Column(name = "COUNTRY_NAME")
-    private String countryName;
 
     public String getId() {
         return id;
@@ -21,13 +18,5 @@ public class Countries {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public String getCountryName() {
-        return countryName;
-    }
-
-    public void setCountryName(String countryName) {
-        this.countryName = countryName;
     }
 }

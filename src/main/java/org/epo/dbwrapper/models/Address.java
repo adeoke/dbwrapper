@@ -1,4 +1,4 @@
-package org.epo.dbwrapper.tables;
+package org.epo.dbwrapper.models;
 
 import javax.persistence.*;
 
@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Table(name = "ADDRESS")
 public class Address {
     @Id
-    @Column(name= "ID", unique = true)
+    @Column(name = "ID", unique = true)
     private String id;
 
     @Column(name = "CITY", nullable = false)

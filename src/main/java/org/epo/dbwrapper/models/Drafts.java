@@ -1,4 +1,4 @@
-package org.epo.dbwrapper.tables;
+package org.epo.dbwrapper.models;
 
 import javax.persistence.*;
 import java.util.Date;
