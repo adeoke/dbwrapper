@@ -11,9 +11,7 @@ NB: video to be added showing how to interact with the api.
 If you have not already done so you will need to close this project.
 You can clone this project with the following command on the command line:
 
-```console
-git clone ssh://git@bitbucket-p.internal.epo.org:7999/ic/dbwrapper.git
-```
+--- INTENTIONALLY MISSING
 
 This will download the code locally to your machine.
 
@@ -21,15 +19,7 @@ This will download the code locally to your machine.
 If you have code that you wish to contribute to this repository then you can do so from the command line with the
 following commands:
 
-```console
-cd existing-project
-git init
-git remote add origin ssh://git@bitbucket-p.internal.epo.org:7999/ic/dbwrapper.git
-git pull origin master
-git add --all
-git commit -m "COMMIT MESSAGE"
-git push -u origin master
-```
+--- INTENTIONALLY MISSING
 
 Which will push your changes to the master branch for this project.
 
