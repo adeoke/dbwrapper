@@ -1,6 +1,5 @@
-package org.epo.dbwrapper.respositories;
+package org.epo.dbwrapper.country;
 
-import org.epo.dbwrapper.models.Countries;
 import org.springframework.data.repository.CrudRepository;
 
 public interface CountriesRepository extends CrudRepository<Countries, String> {

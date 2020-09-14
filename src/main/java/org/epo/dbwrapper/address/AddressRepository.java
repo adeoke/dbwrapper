@@ -1,6 +1,5 @@
-package org.epo.dbwrapper.models;
+package org.epo.dbwrapper.address;
 
-import org.epo.dbwrapper.models.Address;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

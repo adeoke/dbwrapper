@@ -1,4 +1,4 @@
-package org.epo.dbwrapper.models;
+package org.epo.dbwrapper.regions;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

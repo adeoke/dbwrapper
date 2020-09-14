@@ -1,4 +1,4 @@
-package org.epo.dbwrapper.models;
+package org.epo.dbwrapper.person;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "PERSONS")
-public class Persons {
+public class Person {
     @Id
     @Column(name = "ID", unique = true)
     private String id;

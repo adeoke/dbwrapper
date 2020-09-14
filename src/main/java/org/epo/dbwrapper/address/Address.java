@@ -1,4 +1,4 @@
-package org.epo.dbwrapper.models;
+package org.epo.dbwrapper.address;
 
 import javax.persistence.*;
 
