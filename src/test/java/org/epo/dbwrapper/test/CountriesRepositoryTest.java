@@ -1,22 +1,26 @@
-package org.epo.dbwrapper;
+package org.epo.dbwrapper.test;
 
-import org.epo.dbwrapper.country.CountriesRepository;
+import org.epo.dbwrapper.config.SpringTestConfiguration;
+import org.epo.dbwrapper.model.DbWrapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase.Replace;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.test.context.ContextConfiguration;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = Replace.NONE)
+@ContextConfiguration(classes = {SpringTestConfiguration.class})
 public class CountriesRepositoryTest {
 
     @Autowired
-    private CountriesRepository countriesRepository;
+    private DbWrapper dbWrapper;
 
     @Test
     public void allGood() {
-//        System.out.println("item by id is:  " + officesRepository.findById("20f3901d-defc-43ce-b181-5c9692a6e8c3") + "\n\n");
-        System.out.println(countriesRepository.count());
+
+        System.out.println(dbWrapper.getCountriesRepository().count());
+        System.out.println();
     }
 }
