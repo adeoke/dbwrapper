@@ -12,13 +12,13 @@ import org.springframework.test.context.ContextConfiguration;
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = Replace.NONE)
 @ContextConfiguration(classes = {SpringTestConfiguration.class})
-public class CountriesRepositoryTest {
+public class DbWrapperTest {
 
     @Autowired
     private DbWrapper dbWrapper;
 
     @Test
-    public void allGood() {
+    public void countriesRepositoryTest() {
 
         System.out.println(dbWrapper.getCountriesRepository().count());
         System.out.println();
