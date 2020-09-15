@@ -1,7 +1,7 @@
 package org.epo.dbwrapper.test;
 
 import org.epo.dbwrapper.config.SpringTestConfiguration;
-import org.epo.dbwrapper.model.DbWrapper;
+import org.epo.dbwrapper.app.DbWrapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;

@@ -19,8 +19,8 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories("org.epo.dbwrapper")
-@PropertySource("classpath:application.properties")
-@ComponentScan(basePackages = {"org.epo.dbwrapper.model"})
+@PropertySource("application.properties")
+@ComponentScan(basePackages = {"org.epo.dbwrapper.app"})
 public class SpringTestConfiguration {
 
     private final String PROPERTY_DRIVER = "driver";

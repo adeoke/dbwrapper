@@ -1,4 +1,4 @@
-package org.epo.dbwrapper.model;
+package org.epo.dbwrapper.app;
 
 import org.epo.dbwrapper.country.CountriesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
