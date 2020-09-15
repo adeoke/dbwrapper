@@ -9,7 +9,6 @@ import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabas
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.ContextConfiguration;
 
-
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = Replace.NONE)
 @ContextConfiguration(classes = {SpringTestConfiguration.class})
@@ -21,7 +20,7 @@ public class CountriesRepositoryTest {
     @Test
     public void allGood() {
 
-        dbWrapper.getCountriesRepository().count();
+        System.out.println(dbWrapper.getCountriesRepository().count());
         System.out.println();
     }
 }
